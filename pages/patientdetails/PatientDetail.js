@@ -31,9 +31,7 @@ const PatientDetail = () => {
   const history = useSelector(
     (state) => state.currentAppointment.medicalHistory
   );
-  // console.log("hisssssssss",history)
   const data = history.find(his => his.docName == router.query.key);
-  console.log("dataaaaaaaaaaa",data);
   return (
     <Container>
       <Helmet />

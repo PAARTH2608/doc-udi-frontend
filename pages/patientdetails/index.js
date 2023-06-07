@@ -29,11 +29,9 @@ const index = () => {
   const data = useSelector(
     (state) => state.currentAppointment.currentAppointment[0]
   );
-  console.log(data);
   const history = useSelector(
     (state) => state.currentAppointment.medicalHistory
   );
-  console.log("hisssss", history);
   // const docData = useSelector((state) => state.login.user);
 
   const hasSymptoms = data?.symptoms.length > 0 ? true : false;
@@ -58,7 +56,6 @@ const index = () => {
   ];
 
   const [text, setText] = useState("");
-  console.log("text", text);
 
   return (
     <Container>

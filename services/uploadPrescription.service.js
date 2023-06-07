@@ -17,10 +17,8 @@ class AuthService {
         item,
         config
       );
-      // console.log("res", response.data);
       return response.data;
     } catch (error) {
-      // console.log(error);
       throw error;
     }
   }

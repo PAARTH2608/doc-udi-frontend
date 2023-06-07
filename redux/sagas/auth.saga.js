@@ -18,7 +18,6 @@ const currentAppointmentService = new CurrentAppointmentService();
 const uploadPrescriptionService = new UploadPrescriptionService();
 //Vehicle Sagas
 export function* signup(action) {
-  // console.log("in signup");
   try {
     const res = yield call(signupService.signup, action.payload);
     if (res.error) {
@@ -49,7 +48,6 @@ export function* login(action) {
   }
 }
 export function* signout(action) {
-  // console.log("action", action.payload);
   try {
     const res = yield call(signoutService.signout, action.payload);
     if (res.error) {
@@ -66,7 +64,6 @@ export function* signout(action) {
 }
 
 export function* getAppointments(action) {
-  // console.log("action", action.payload);
   try {
     const res = yield call(appointmentService.getAppointments, action.payload);
     if (res.error) {
@@ -83,7 +80,6 @@ export function* getAppointments(action) {
 }
 
 export function* getCurrentAppointment(action) {
-  // console.log("action", action.payload);
   try {
     const res = yield call(
       currentAppointmentService.getCurrentAppointments,
@@ -103,7 +99,6 @@ export function* getCurrentAppointment(action) {
 }
 
 export function* uploadPrescription(action) {
-  // console.log("action", action.payload);
   try {
     const res = yield call(
       uploadPrescriptionService.uploadPrescription,

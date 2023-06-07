@@ -37,7 +37,6 @@ const Profile = () => {
     boxShadow: "none",
   };
   const user = useSelector((state) => state.login.user);
-  console.log(user);
   return (
     <Container>
       <Logo />

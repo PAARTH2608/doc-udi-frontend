@@ -4,7 +4,6 @@ import { BASE_API_URL } from "./constants";
 
 class AuthService {
   async login(item) {
-    // console.log("ittmtmtmt", item)
     const config = {
       headers: {
         "Access-Control-Allow-Origin": "*",
@@ -16,7 +15,6 @@ class AuthService {
       const response = await Axios.post(`${BASE_API_URL}/doc/sign-in-doc`, item, config);
       return response.data;
     } catch (error) {
-      // console.log(error);
       throw error;
     }
   }

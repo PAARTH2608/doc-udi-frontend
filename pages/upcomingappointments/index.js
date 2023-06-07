@@ -20,9 +20,7 @@ const UpcomingAppointments = () => {
   const upcomingAppointments = useSelector(
     (state) => state.getAppointment.upAppointments
   );
-  console.log(upcomingAppointments)
   const hasAppointment = upcomingAppointments?.length > 0 ? true : false;
-  // console.log("up",upcomingAppointments)
 
   const theme = useTheme();
   const style = [

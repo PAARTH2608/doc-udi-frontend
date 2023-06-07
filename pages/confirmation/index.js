@@ -52,7 +52,6 @@ const Confirmation = () => {
   );
   // const patientPfp = useSelector((state) => state.login.user.pfp);
   const docData = useSelector((state) => state.login.user);
-  // console.log("hiiii",docData)
 
   const dispatch = useDispatch();
 

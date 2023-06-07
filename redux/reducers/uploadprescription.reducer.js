@@ -7,7 +7,6 @@ const initialState = {
 };
 
 const UploadPrescriptionReducer = (state = initialState, action) => {
-  // console.log(action);
   switch (action.type) {
   case AuthTypes.UPLOADPRESCRIPTION_SUCCESS:
     return {

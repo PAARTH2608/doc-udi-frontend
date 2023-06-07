@@ -4,7 +4,6 @@ import { BASE_API_URL } from "./constants";
 
 class AuthService {
   async getCurrentAppointments(item) {
-    // console.log("item", item);
     const config = {
       headers: {
         "Access-Control-Allow-Origin": "*",
@@ -21,10 +20,8 @@ class AuthService {
         data,
         config
       );
-      // console.log("res", response.data);
       return response.data;
     } catch (error) {
-      // console.log(error);
       throw error;
     }
   }

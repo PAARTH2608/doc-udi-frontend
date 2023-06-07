@@ -16,7 +16,6 @@ const initialState = {
 };
 
 const SignupReducer = (state = initialState, action) => {
-  // console.log("hihhhhhhhhh",action);
   switch (action.type) {
   case AuthTypes.SIGNUP_SUCCESS:
     return {

@@ -24,7 +24,6 @@ const initialState = {
 
 
 const SignoutReducer = (state = initialState, action) => {
-  // console.log(action);
   switch (action.type) {
   case AuthTypes.SIGNOUT_SUCCESS:
     return {

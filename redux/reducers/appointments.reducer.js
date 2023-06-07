@@ -6,7 +6,6 @@ const initialState = {
 };
 
 const AppointmentReducer = (state = initialState, action) => {
-  // console.log(action);
   switch (action.type) {
   case AuthTypes.APPOINTMENT_SUCCESS:
     return {

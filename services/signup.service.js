@@ -4,7 +4,6 @@ import { BASE_API_URL } from "./constants";
 
 class AuthService {
   async signup(item) {
-    // console.log(item);
     const config = {
       headers: {
         "Content-Type": "application/json",
@@ -17,7 +16,6 @@ class AuthService {
       const response = await Axios.post(`${BASE_API_URL}/doc/create-doc`, item, config);
       return response.data;
     } catch (error) {
-      // console.log(error);
       throw error;
     }
   }
